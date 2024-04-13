@@ -1,9 +1,9 @@
 // validationMiddleware.js
 
-const productSchema = require("./schemas/productSchema");
+const productSchema = require("../schemas/productSchema");
 
 const validateProduct = (req, res, next) => {
-  const { error, value } = Schema.validate(req.body);
+  const { error, value } = productSchema.validate(req.body);
 
   // If validation fails, return a 400 Bad Request response with the error details
   if (error) {

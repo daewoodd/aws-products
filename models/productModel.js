@@ -10,7 +10,4 @@ const mongooseProductSchema = new mongoose.Schema({
 const Product = mongoose.model("Product", mongooseProductSchema);
 
 // Export both the schema and the model
-module.exports = {
-  productSchema,
-  Product,
-};
+module.exports = Product;

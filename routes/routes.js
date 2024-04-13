@@ -6,9 +6,9 @@ const {
   addProduct,
   deleteProduct,
   updateProduct,
-} = require("./productController/productController");
+} = require("../productController/productController");
 
-const { validateProduct } = require("./middleware/validateMiddleware");
+const { validateProduct } = require("../Middleware/validateMiddleware");
 
 const routes = express.Router();
 
